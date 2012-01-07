@@ -1,0 +1,17 @@
+---
+layout: default
+title: Hella Robots
+---
+
+<section id="main" class="group">
+  <div class="span16 first">
+    <h2>Posts</h2>
+    <ul class="posts">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-date">{{ post.date | date_to_string }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul> 
+  </div>
+</section> 
